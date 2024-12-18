@@ -5,35 +5,37 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Samgyuniku</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="menu.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
-        <section id="Menu">
-          <nav>
-            <div class="logo">
-                <img src="c:\Users\Rica Naag\Downloads\logo.png">
-            </div>
-
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-
-            <div class="icon">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <i class="fa-solid fa-heart"></i>
-                <i class="fa-solid fa-cart-shopping"></i>
-            </div>
+        <section id="Home">
+            <nav>
+              <div class="logo">
+                  <img src="images/logo.png">
+              </div>
+              <!-- Links -->
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="menu.html">Menu</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+              </ul>
+              <!--ICON-->
+              <div class="icon">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <i class="fa-solid fa-heart"></i>
+                  <a href="cart.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </a>
+              </div>
           </nav>
-       </section>
+          </section>
     </header>
 
         <div class="menu" id="Menu">
-            <h1>Unlimited for<span>₱349 only!!</span></h1> <br>
+            <h1>Unlimited for<span>₱349 only!!</span></h1>
             <h4>Unlimited Samgyupsal Promo For 3Hours</h4>
             <p>
                 Pork + Beef - ₱400 <br>
@@ -51,7 +53,7 @@
         <div class="menu_card">
 
                 <div class="menu_image">
-                    <img src="c:\Users\Rica Naag\Downloads\pork dae-pae.png">
+                    <img src="images/pork dae-pae.png">
                 </div>
 
                 <div class="small_card">
@@ -68,9 +70,8 @@
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
                 </div>
-                <a href="#" class="menu_btn">Order Now</a>
+                <a href="javascript:void(0)" class="menu_btn" onclick="addToCart('Pork Dae-Pae', 'images/pork dae-pae.png', 'Thinly sliced pork belly')">Order Now</a>
             </div>
 
         </div>
@@ -78,7 +79,7 @@
         <div class="menu_card">
 
                 <div class="menu_image">
-                    <img src="c:\Users\Rica Naag\Downloads\pork yangnyum dae-pae.png">
+                    <img src="images/pork yangnyum dae-pae.png">
                 </div>
 
                 <div class="small_card">
@@ -105,7 +106,7 @@
         <div class="menu_card">
 
                 <div class="menu_image">
-                    <img src="c:\Users\Rica Naag\Downloads\pork yangnyum buljib.png">
+                    <img src="images/pork yangnyum buljib.png">
                 </div>
 
                 <div class="small_card">
@@ -132,7 +133,7 @@
         <div class="menu_card">
 
                 <div class="menu_image">
-                    <img src="c:\Users\Rica Naag\Downloads\gochujang pork.png">
+                    <img src="images/gochujang pork.png">
                 </div>
 
                 <div class="small_card">
@@ -149,7 +150,6 @@
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
                 </div>
                     <a href="#" class="menu_btn">Order Now</a>
                 </div>
@@ -161,7 +161,7 @@
         <div class="menu_card">
 
                 <div class="menu_image">
-                    <img src="c:\Users\Rica Naag\Downloads\beef woo_samgyup.png">
+                    <img src="images/beef woo_samgyup.png">
                 </div>
 
                 <div class="small_card">
@@ -178,7 +178,6 @@
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
                 </div>
                     <a href="#" class="menu_btn">Order Now</a>
                 </div>
@@ -188,7 +187,7 @@
         <div class="menu_card">
 
                 <div class="menu_image">
-                    <img src="c:\Users\Rica Naag\Downloads\marinated yangnyum beef.png">
+                    <img src="images/marinated yangnyum beef.png">
                 </div>
 
                 <div class="small_card">
@@ -215,7 +214,7 @@
         <div class="menu_card">
 
                 <div class="menu_image">
-                    <img src="c:\Users\Rica Naag\Downloads\gochujang beef.png">
+                    <img src="images/gochujang beef.png">
                 </div>
     
                 <div class="small_card">
@@ -232,7 +231,6 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
                     </div>
                         <a href="#" class="menu_btn">Order Now</a>
                     </div>
@@ -242,7 +240,7 @@
         <div class="menu_card">
 
                     <div class="menu_image">
-                        <img src="c:\Users\Rica Naag\Downloads\beef enoki.png">
+                        <img src="images/beef enoki.png">
                     </div>
         
                     <div class="small_card">
@@ -381,7 +379,7 @@
         <div class="menu_card">
 
             <div class="menu_image">
-                <img src="c:\Users\Rica Naag\Downloads\cheese.png">
+                <img src="images/cheese.png">
             </div>
 
             <div class="small_card">
@@ -408,7 +406,7 @@
     <div class="menu_card">
 
             <div class="menu_image">
-                <img src="c:\Users\Rica Naag\Downloads\kimchi.png">
+                <img src="images/kimchi.png">
             </div>
 
             <div class="small_card">
@@ -563,8 +561,8 @@
 
 </div>       
 
-    </div>
-        <!--Footer-->
+</div>
+    
  <!--Footer-->
       
  <footer class="footer">
@@ -576,44 +574,71 @@
         <div class="footer-section">
           <h4>Follow Us</h4>
           <div class="social-icons">
-            <a href="#"><img src="images/fb.png" alt="Facebook"></a>
-            <a href="#"><img src="images/ig.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/samgyuniku/"><img src="images/fb.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/samgyuniku/?hl=en"><img src="images/ig.png" alt="Instagram"></a>
           </div>
         </div>
 
         <div class="footer-section">
           <h4>How To Order</h4>
-          <a href="#">View Menu</a>
-          <a href="#">Locations</a>
-        </div>
-        <div class="footer-section">
-          <h4>Promotions</h4>
-          <a href="#">Promos</a>
-          <a href="#">Gift Cards</a>
+          <a href="menu.html">View Menu</a>
+          <a href="contact.html">Locations</a>
         </div>
         <div class="footer-section">
           <h4>About Us</h4>
-          <a href="#">About Samgyuniku</a>
-          <a href="#">Careers</a>
-          <a href="#">Contact Us</a>
-          <a href="#">Rate Our Store</a>
-        </div>
-        <div class="footer-section">
-          <h4>About Our Website</h4>
-          <a href="#">Privacy Notice</a>
-          <a href="#">Terms & Conditions</a>
-          <a href="#">Accessibility</a>
-          <a href="#">Sitemap</a>
+          <a href="about.html">About Samgyuniku</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="contact.html">Rate Our Store</a>
         </div>
       </div>
-      <div class="footer-buttons">
-        <button class="order-now-btn">Order Now</button>
-      </div>
+      <div class="order-now-btn">
+        <a href="menu.html">Order Now</a>
+        <i class="fa-solid fa-angle-right"></i>
+    </div>
     </div>
     <p class="footer-copyright">
       © 2024 Samgyuniku Unlimited Korean BBQ. All rights reserved.
     </p>
   </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Select all "Add to Cart" buttons
+        const addToCartButtons = document.querySelectorAll(".add-to-cart");
+
+        // Cart array to hold items
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+        // Add event listener to each button
+        addToCartButtons.forEach(button => {
+            button.addEventListener("click", function() {
+                const itemName = button.getAttribute("data-name");
+                const itemImage = button.getAttribute("data-image");
+
+                // Create a cart item object
+                const cartItem = {
+                    name: itemName,
+                    image: itemImage,
+                    quantity: 1
+                };
+
+                // Check if the item already exists in the cart
+                const existingItem = cart.find(item => item.name === itemName);
+                if (existingItem) {
+                    existingItem.quantity += 1; // Increase quantity if item exists
+                } else {
+                    cart.push(cartItem); // Add new item to cart
+                }
+
+                // Save updated cart to localStorage
+                localStorage.setItem("cart", JSON.stringify(cart));
+
+                // Redirect to cart.html
+                window.location.href = "cart.html";
+            });
+        });
+    });
+</script>
 
 </body>
 </html> 
